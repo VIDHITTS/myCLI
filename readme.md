@@ -3,11 +3,13 @@
 A functional TypeScript-based Command Line Interface (CLI) built with `commander`, `axios`, and `chalk`.
 
 ## :pushpin: Project Requirements
+
 - **Object-Oriented Programming**: Structured using classes and objects.
 - **11 Custom Commands**: Includes arithmetic, greeting, file information, and API-based data.
 - **API Integration**: Fetches data from 5 different external sources.
 
 ## :globe_with_meridians: Advanced Features
+
 - **API Integration**:
   - **Weather**: Fetches real-time weather info from `wttr.in`.
   - **Quotes**: Generates random inspirational quotes from `zenquotes.io`.
@@ -21,6 +23,7 @@ A functional TypeScript-based Command Line Interface (CLI) built with `commander
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/VIDHITTS/myCLI.git
    cd myCLI
@@ -37,20 +40,20 @@ A functional TypeScript-based Command Line Interface (CLI) built with `commander
 
 Now you can run the CLI simply by typing `mycli` from anywhere in your terminal:
 
-| Command | Usage | Description |
-| --- | --- | --- |
-| `greet` | `mycli greet <name>` | Greets the user. |
-| `add` | `mycli add <n1> <n2>` | Sum of two numbers. |
-| `subtract` | `mycli subtract <n1> <n2>` | Difference of two numbers. |
-| `multiply` | `mycli multiply <n1> <n2>` | Product of two numbers. |
-| `divide` | `mycli divide <n1> <n2>` | Division of two numbers. |
-| `joke` | `mycli joke` | Random joke. |
-| `weather` | `mycli weather <city>` | Weather details for a city. |
-| `quote` | `mycli quote` | Random inspirational quote. |
-| `pokemon` | `mycli pokemon <name>` | Information about a Pokemon. |
-| `country` | `mycli country <name>` | Information about a country. |
-| `fileinfo` | `mycli fileinfo <file>` | Basic details of a file. |
-| `init_ts` | `mycli init_ts <folder>` | Initialize a new TS project. |
+| Command    | Usage                      | Description                  |
+| ---------- | -------------------------- | ---------------------------- |
+| `greet`    | `mycli greet <name>`       | Greets the user.             |
+| `add`      | `mycli add <n1> <n2>`      | Sum of two numbers.          |
+| `subtract` | `mycli subtract <n1> <n2>` | Difference of two numbers.   |
+| `multiply` | `mycli multiply <n1> <n2>` | Product of two numbers.      |
+| `divide`   | `mycli divide <n1> <n2>`   | Division of two numbers.     |
+| `joke`     | `mycli joke`               | Random joke.                 |
+| `weather`  | `mycli weather <city>`     | Weather details for a city.  |
+| `quote`    | `mycli quote`              | Random inspirational quote.  |
+| `pokemon`  | `mycli pokemon <name>`     | Information about a Pokemon. |
+| `country`  | `mycli country <name>`     | Information about a country. |
+| `fileinfo` | `mycli fileinfo <file>`    | Basic details of a file.     |
+| `init_ts`  | `mycli init_ts <folder>`   | Initialize a new TS project. |
 
 ## Example Usage
 

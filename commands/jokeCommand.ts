@@ -25,10 +25,10 @@ class Joke_Command {
       );
       const { setup, punchline } = res.data;
       console.log(chalk.cyan(`\nSetup: ${setup}`));
-      
+
       // Using a promise-based delay to ensure the sequence in tests or async contexts
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
       console.log(chalk.yellow(`Punchline: ${punchline}\n`));
     } catch (err) {
       console.log(chalk.red("Failed to fetch joke."));
