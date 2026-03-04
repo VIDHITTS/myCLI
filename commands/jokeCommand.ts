@@ -1,4 +1,5 @@
 import axios from "axios";
+import chalk from "chalk";
 
 class Joke_Command {
   name;
@@ -22,9 +23,15 @@ class Joke_Command {
       const res = await axios.get(
         "https://official-joke-api.appspot.com/random_joke",
       );
-      console.log(res.data);
+      const { setup, punchline } = res.data;
+      console.log(chalk.cyan(`\nSetup: ${setup}`));
+      
+      // Using a promise-based delay to ensure the sequence in tests or async contexts
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      console.log(chalk.yellow(`Punchline: ${punchline}\n`));
     } catch (err) {
-      console.log(err);
+      console.log(chalk.red("Failed to fetch joke."));
     }
   }
 }
