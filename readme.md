@@ -26,17 +26,16 @@ A functional TypeScript-based Command Line Interface (CLI) built with `commander
    cd myCLI
    ```
 
-2. Install dependencies:
+2. Install dependencies and link the command:
    ```bash
    npm install
-   ```
-
-3. Build the project:
-   ```bash
    npm run build
+   npm link
    ```
 
 ## Available Commands
+
+Now you can run the CLI simply by typing `mycli` from anywhere in your terminal:
 
 | Command | Usage | Description |
 | --- | --- | --- |
@@ -51,12 +50,13 @@ A functional TypeScript-based Command Line Interface (CLI) built with `commander
 | `pokemon` | `mycli pokemon <name>` | Information about a Pokemon. |
 | `country` | `mycli country <name>` | Information about a country. |
 | `fileinfo` | `mycli fileinfo <file>` | Basic details of a file. |
+| `init_ts` | `mycli init_ts <folder>` | Initialize a new TS project. |
 
 ## Example Usage
 
 ```bash
-node dist/cli.js weather London
-node dist/cli.js pokemon pikachu
-node dist/cli.js country india
-node dist/cli.js fileinfo package.json
+mycli weather London
+mycli pokemon pikachu
+mycli country india
+mycli fileinfo package.json
 ```
